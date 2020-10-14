@@ -16,4 +16,12 @@ cd skriptimine
 d)tekita lokaalne repo git süsteemi jaoks antud kaustas
 git init
 
+#
+
+faili iga muudatuse korral:
+git status - kontrolli, et file muudetud
+git add failinimi - lisa muudetud file jälgimissüsteemi
+git commit -m "kirjeldus" - koosta muutse kirjeldus
+git log - kontrolli, et muudatus on salvestatud
+
 
