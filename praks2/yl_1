@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#Tervitus
+
+echo "Tere, $USER"
+echo "!"
+
+
