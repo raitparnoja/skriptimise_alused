@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#Ekskursiooni abiline
+
+echo -n "Reisijate arv:"
+
+read inim
+
+echo -n "Kohtade arv bussis:"
+
+read koht
+
+Bussid=$(($inim/$koht))
+Maas=$(($inim%$koht))
+
+echo "Täis busse: $Bussid"
+echo "Maha jäänud reisijad: $Maas"
