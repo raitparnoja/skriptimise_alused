@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#Rait Pärnoja. Menüü. Aitab kasutajal toidu valida. 
+
+PS3="Vali toit: "
+toit=("Liha ja kartulid" "Kala ja krõpsud" "Supp ja salat")
+
+select valik in "${toit[@]}"; do
+	case $valik in
+		"Liha ja kartulid")
+
+			echo "Väga maitsev, aga jälgi oma tervist!"
+			echo "Head isu!"
+			;;
+		"Kala ja krõpsud")
+
+			echo "Briti toit on maitsev!"
+			echo "Head isu!"
+			;;
+		"Supp ja salat")
+
+			echo "Nii tervislik ja igav..."
+			echo "Head isu!"
+			;;
+	esac
+done
