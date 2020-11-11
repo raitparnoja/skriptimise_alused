@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#Rait Pärnoja. Infoscript. Väljastab kasutajanime ja kuupäeva ning kellaaja. 
+
+# Tervitus
+
+echo "Tere, $USER!"
+
+#Kuupäev
+
+now=$(date)
+
+echo $now
+
+cal 
