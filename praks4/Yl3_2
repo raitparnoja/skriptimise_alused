@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#Ekskursiooni abiline
+
+echo -n "Reisijate arv:"
+
+read inim
+
+echo -n "Kohtade arv bussis:"
+
+read koht
+
+Bussid=$(($inim/$koht))
+Maas=$(($inim%$koht))
+
+if [ $Maas -gt 0 ]; then
+
+	 bussid=$(($Bussid + 1))
+
+fi
+
+#Tulemused
+
+echo "Kõigi reisijate mahutamiseks on vaja $bussid bussi."
