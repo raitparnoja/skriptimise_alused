@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#Paaris või paaritu. Parameetrite, mitte sisestusega.
+#Kontrollin, kas sisestati ainult 1 täisarv
+if [ $# != 1 ]; then
+	echo "Palun sisesta 1 täisarv. Sisestasid $#"
+	exit
+fi
+
+#Kontrollin, kas arv on paaris või paaritu
+arv2=$(($1 % 2))
+
+#On oluline panna tingimuslausele mõlemale poole tühikud enne kandilisi sulge.
+
+if [ $arv2 -eq 0 ]; then
+	echo "$1 on paaris"
+else
+	echo "$1 on paaritu"
+fi
+
