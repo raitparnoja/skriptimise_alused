@@ -1,0 +1,19 @@
+#!/bin/bash
+
+#Kella ajad
+#Kasutaja sisestus
+echo -n "Sisesta väikese seieri näitaja kellal: "
+read kell
+
+#Kontroll
+if [ $kell -ge 6 -a $kell -lt 12 ]; then
+	echo "Tere hommikut"
+elif [ $kell -ge 12 -a $kell -lt 18 ]; then
+	echo "Tere päevast"
+elif [ $kell -ge 18 -a $kell -lt 22 ]; then
+	echo "Tere õhtust!"
+elif [ $kell -ge 22 -a $kell -lt 24 ] || [ $kell -ge 0 -a $kell -lt 6 ]; then
+	echo "Head ööd!"
+else
+	echo "Palun sisesta õige tundide arv"
+fi
