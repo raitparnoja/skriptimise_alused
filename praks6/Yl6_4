@@ -1,0 +1,20 @@
+#!/bin/bash
+#Algarvude leidmine. 
+
+echo -n "Palun sisesta täisarv, peale 1: "
+read nr
+#Kontrollime, ega kasutaja nr 1 ei kasutanud."
+if [ $nr -eq 1 ]; then
+	echo "Palun sisesta mingi teine täisarv peale 1."
+	exit
+fi
+#Tekitame for loopi, et testida, kas arv jagub millegi muuga.
+for ((i=2; i<=$nr/2; i++)); do
+	if [ $(($nr%i)) -eq 0 ]; then
+		echo "$nr ei ole primaararv"
+		exit
+	fi
+done
+#Kuna arv ei jagunud millegi muuga peale iseenda ja 1 väljastame.
+echo "$nr on primaararv."
+
