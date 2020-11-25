@@ -1,0 +1,16 @@
+#!/bin/bash
+#Liidame kasutaja antud arvu numbrid eraldi kokku
+#Küsime sisestust.
+echo -n "Palun sisesta suvaline täisarv: "
+read nr
+
+sum=0
+
+while [ $nr -ne 0 ]; do
+	yle=$(($nr % 10))
+	sum=$(($sum + $yle))
+	nr=$(($nr / 10))
+
+done
+#Väljastame tulemuse
+echo "Selle arvu numbrite summa on $sum"
