@@ -2,9 +2,15 @@
 
 #Loetleme numbreid
 
-for (( nr=1; nr<11; arr++ )); do
-	echo $nr
-	nr=$(($nr + 1))
+sum=0
+
+for (( nr = 1; nr < 11; nr++ )); do
+	jk=$(($nr % 2))
+	if [ $jk -eq 0 ]; then
+		sum=$(($sum + $nr))
+		echo $sum
+	fi
 done
+echo "Vahemikus 1-10 on paarisarvude summa: $sum "
 # lõpp
 
