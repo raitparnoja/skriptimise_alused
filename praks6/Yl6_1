@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#Loetleme numbreid
+
+for (( nr=1; nr<11; arr++ )); do
+	echo $nr
+	nr=$(($nr + 1))
+done
+# lõpp
+
